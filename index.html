@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime-san</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f1a;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav h1{
+    color:#ff2e92;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff2e92;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:url('https://images.alphacoders.com/736/736461.jpg') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:15px;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 30px;
+    background:#ff2e92;
+    border:none;
+    border-radius:25px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff5eb5;
+}
+
+/* Anime Section */
+.section{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:36px;
+    margin-bottom:40px;
+    color:#ff2e92;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(255,46,146,0.4);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Anime-san</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Anime-san</h2>
+        <p>Explore the best anime series, movies, and characters in one place.</p>
+        <button class="btn">Explore Now</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>🔥 Popular Anime</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.alphacoders.com/605/605592.jpg">
+            <div class="card-content">
+                <h3>Attack on Titan</h3>
+                <p>Humanity fights for survival against giant Titans.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.alphacoders.com/606/606197.jpg">
+            <div class="card-content">
+                <h3>Demon Slayer</h3>
+                <p>A boy becomes a demon slayer to save his sister.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.alphacoders.com/109/1098366.jpg">
+            <div class="card-content">
+                <h3>One Piece</h3>
+                <p>Pirates search for the legendary treasure, One Piece.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Anime-san | Designed with ❤️ for Anime Fans</p>
+</footer>
+
+</body>
+</html>
